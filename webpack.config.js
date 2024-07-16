@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  entry: "/Users/gabrielsoares/repos/dropdown_menu/src/index.js",
+  entry: "./src/index.js",
   mode: "development",
   output: {
     path: path.resolve(__dirname, "./dist"),

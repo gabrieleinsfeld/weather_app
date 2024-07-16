@@ -1,1 +1,3 @@
-console.log("Test");
+import loadPage from "./js/loadPage";
+
+loadPage();
