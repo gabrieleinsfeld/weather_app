@@ -1,0 +1,25 @@
+####Run:
+npm init
+*To generate a package.json file.
+
+####Run:
+npm install webpack webpack-cli --save-dev
+*To install webpack to the node_modules directory of your project.
+
+####Run:
+npm install --save-dev html-webpack-plugin
+
+####Run:
+npm install --save-dev style-loader css-loader
+
+####Change:
+Entry in config file
+
+
+####Deploying to github
+1.Take dist out of .gitignore file
+2.git branch gh-pages
+3.git checkout gh-pages
+4.git add dist
+5.git commit -m "Initial dist subtree commit"
+6.git subtree push --prefix dist origin gh-pages
