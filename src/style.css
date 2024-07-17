@@ -1,0 +1,121 @@
+:root {
+  --color1: #95d6ea; /* RGB: (149, 214, 234) */
+  --color2: #7bc7dd; /* RGB: (123, 199, 221) */
+  --color3: #62a1c7; /* RGB: (98, 161, 199) */
+  --color4: #528ab4; /* RGB: (82, 138, 180) */
+  --color5: #2b235a; /* RGB: (21, 113, 159) */
+}
+
+body {
+  color: #fcfcfc;
+  font-weight: bold;
+  width: 100vw;
+  height: max(100vh, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: rgb(2, 0, 36);
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, var(--color1) 30%, var(--color3) 80%);
+  padding-bottom: 40px;
+}
+header {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#search {
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  color: #fcfcfc;
+  background-color: var(--color2);
+}
+
+#submit img {
+  width: 10px;
+}
+
+#submit {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background-color: #fcfcfc;
+}
+
+#hour_container {
+  height: 100px;
+  width: calc(80vw + 10px);
+  background-color: var(--color4);
+  display: flex;
+
+  overflow-x: scroll;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 7px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#day_container {
+  width: 80vw;
+  height: 600px;
+  background-color: var(--color4);
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.hour_item {
+  min-width: 100px;
+  height: 100%;
+  background-color: var(--color1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.hour_icon {
+  width: 35px;
+  height: auto;
+}
+
+.hour_title {
+  text-align: center;
+}
+
+.day_item {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 12.8%;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: var(--color1);
+  border-radius: 15px;
+}
+
+.day_icon {
+  width: 45px;
+  height: auto;
+}
+
+.day {
+  background-color: var(--color1);
+}
+
+.night {
+  background-color: var(--color5);
+}

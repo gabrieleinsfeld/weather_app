@@ -1,3 +1,3 @@
 import loadPage from "./js/loadPage";
-
-loadPage();
+import "./style.css";
+loadPage("porto+alegre");
